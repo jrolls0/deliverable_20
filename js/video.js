@@ -1,5 +1,3 @@
-var video;
-
  window.addEventListener("load", function() {
 	let video_let = document.querySelector(".video");
 	video_let.autoplay = false;
