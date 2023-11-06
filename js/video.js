@@ -20,13 +20,13 @@ window.addEventListener("load", function() {
 	//slow down button
 	document.querySelector("#slower").addEventListener("click", function() {
 		video.playbackRate -= 0.1 * video.playbackRate;
-		console.log(video.playbackRat)
+		console.log(video.playbackRate)
 	});
 
 	//speed up   button
 	document.querySelector("#faster").addEventListener("click", function() {
 		video.playbackRate += 0.1 * video.playbackRate;
-		console.log(video.playbackRat)
+		console.log(video.playbackRate)
 	});
 
 
@@ -44,12 +44,12 @@ window.addEventListener("load", function() {
 	//mute button
 	document.querySelector("#mute").addEventListener("click", function() {
 		if (video.muted) {
-            		video.muted = False;
-			this.textContent = Mute;
+            		video.muted = false;
+			this.textContent = 'Mute';
         	} 
 		else {
-            		video.muted = True;
-			this.textContent = Unmute;
+            		video.muted = true;
+			this.textContent = 'Unmute';
         	}
 	});
 	let display = document.querySelector("#volume");
